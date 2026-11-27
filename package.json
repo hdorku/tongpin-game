@@ -7,7 +7,7 @@
     "dev": "vite --host 127.0.0.1 --open /dev.html",
     "build": "vite build --base=./ && node publish.mjs",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "node --test game.test.js"
+    "test": "node --test *.test.js"
   },
   "dependencies": {
     "peerjs": "^1.5.5"
