@@ -1,4 +1,6 @@
-# 同频 · 双人猜词
+# 同频猜词
+
+游玩地址：https://hdorku.github.io/tongpin-game/
 
 两个人每轮各写一个词，双方提交后一起揭晓，根据上一轮继续联想。相同词自动通关；意思相近时，双方都确认才通关。
 
@@ -17,7 +19,7 @@ npm run dev
 npm run build
 ```
 
-已发布源码到 https://github.com/hdorku/tongpin-game 。在 Settings → Pages 中选择 Deploy from a branch → main → /(root)。`index.html` 是构建生成的独立网页，可直接由 GitHub Pages 托管。开发入口是 `/dev.html`，可编辑同目录的 `main.js`、`room.js`、`game.js` 和 `style.css`；执行 `npm run build` 会重新生成根目录与 dist 中的 index.html，提交更新即可自动发布。房间邀请使用查询参数，刷新无需服务器路由。
+已发布源码到 https://github.com/hdorku/tongpin-game 。在 Settings → Pages 中选择 Deploy from a branch → main → /(root)。`index.html` 是构建生成的独立网页（头像文件为同目录的 `avatar.jpg`），可直接由 GitHub Pages 托管。开发入口是 `/dev.html`，可编辑同目录的 `main.js`、`room.js`、`game.js` 和 `style.css`；执行 `npm run build` 会重新生成根目录与 dist 中的 index.html，提交更新即可自动发布。房间邀请使用查询参数，刷新无需服务器路由。
 
 ## 联机与隐私
 

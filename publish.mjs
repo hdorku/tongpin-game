@@ -7,4 +7,5 @@ html=html.replace(/<script\b[^>]*src="([^"]+)"[^>]*><\/script>/g,(_,src)=>{
 });
 html=html.replace(/<link\b[^>]*rel="stylesheet"[^>]*href="([^"]+)"[^>]*>/g,(_,src)=>`<style>${readFileSync(resolve('dist',src.replace(/^\.\//,'')),'utf8')}</style>`);
 writeFileSync('dist/index.html',html);writeFileSync('index.html',html);
+writeFileSync('dist/avatar.jpg',readFileSync('avatar.jpg'));
 console.log('Standalone GitHub Pages index.html:',Buffer.byteLength(html),'bytes');
